@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Share Twitter</title> 
+</head>
+	<body>
+		<a href="javascript:sharerTwitter(location.href, 'Share Twitter');">Twitter</a>
+
+	<script type="text/javascript">
+		function sharerTwitter(sharerLnk, sharerNm) {
+    	var url = "http://twitter.com/share?url=" + encodeURIComponent(sharerLnk) + "&text=" + encodeURIComponent(sharerNm);
+    	window.open(url, 'Share to twitter');
+	}
+	</script>
+	</body>
+</html>

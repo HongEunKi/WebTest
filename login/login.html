@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+  </head>
+  <body>
+    <div class="login">
+      <form class="login-content">
+        <div class="container">
+          <p>Please fill in this form login.</p>
+          <hr>
+          <label for="id"><b>ID</b></label>
+          <input type="text" placeholder="Enter Id" id="userId" required>
+
+          <label for="pw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" id="userPw" required>
+
+          <button type="button" onclick="checkInfo()" class="loginBtn">Login</button>
+        </div>
+      </form>
+    </div>
+    <script>
+      function checkInfo() {
+        var id = document.getElementById("userId").value;
+        var pw = document.getElementById("userPw").value;
+
+        if(id === "user" && pw === "user") {
+          location.href = "../todoList/todoList.html";
+        }
+        else {
+          alert("Check your ID and PW");
+        }
+      }
+    </script>
+  </body>
+</html>
